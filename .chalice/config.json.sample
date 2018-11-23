@@ -1,0 +1,18 @@
+{
+  "version": "2.0",
+  "app_name": "streamname",
+  "stages": {
+    "dev": {
+      "api_gateway_stage": "api",
+       "environment_variables":
+       {
+           "KVS_STREAM_NAME": "",
+           "KVS_STREAM_ARN": "",
+           "COGNITO_POOL_ID": "",
+           "COGNITO_POOL_NAME": "",
+           "COGNITO_POOL_ARN": "",
+           "DEBUG_MODE": "1"
+       }
+    }
+  }
+}
