@@ -37,6 +37,7 @@ def get_kvs_endpoint():
         kvam = boto3.client('kinesis-video-archived-media',endpoint_url=endpoint.get('DataEndpoint'))
         url = kvam.get_hls_streaming_session_url(
             StreamARN=streamarn,
+            Expires=3600,
             PlaybackMode="LIVE"
         )
         logger.debug(str(url))
