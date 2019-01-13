@@ -1,17 +1,20 @@
 {
   "version": "2.0",
-  "app_name": "streamname",
+  "app_name": "auth-raspi-stream",
   "stages": {
     "dev": {
       "api_gateway_stage": "api",
        "environment_variables":
        {
-           "KVS_STREAM_NAME": "",
-           "KVS_STREAM_ARN": "",
-           "COGNITO_POOL_ID": "",
-           "COGNITO_POOL_NAME": "",
-           "COGNITO_POOL_ARN": "",
-           "DEBUG_MODE": "1"
+           "KVS_STREAM_NAME": "xxxx",
+           "KVS_STREAM_ARN": "arn:aws:kinesisvideo:ap-northeast-1:000:stream/xxxx",
+           "COGNITO_POOL_ID": "ap-northeast-1_xxxx",
+           "COGNITO_POOL_NAME": "KVSUserPool",
+           "COGNITO_POOL_ARN": "arn:aws:cognito-idp:ap-northeast-1:xxxx:userpool/ap-northeast-1_xxxx",
+           "DEBUG_MODE": "1",
+           "IOT_HOST": "xxxx-ats.iot.ap-northeast-1.amazonaws.com",
+           "IOT_PORT": "443",
+           "IOT_TOPIC": "kamekusa/SG909G"
        }
     }
   }
